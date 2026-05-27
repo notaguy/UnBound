@@ -34,22 +34,6 @@
   text-decoration: none;
 }
 
-.header__logo {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: var(--color-primary);
-  color: var(--color-teal);
-}
-
-.header__name {
-  font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: 0.04em;
-}
-
 .header__menu-btn {
   display: grid;
   place-items: center;

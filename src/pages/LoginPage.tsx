@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import AuthTrustNotice from "../components/AuthTrustNotice";
+import Logo from "../components/Logo";
 import DemoAccountsPanel from "../components/DemoAccountsPanel";
 import { useApp } from "../context/AppContextSupabase";
 import "./AuthPages.css";
@@ -33,6 +34,7 @@ export default function LoginPage() {
       <Link to="/" className="auth-page__back">
         ← Înapoi
       </Link>
+      <Logo className="logo--auth" />
       <p className="section__eyebrow">Autentificare</p>
       <h1 className="section__title">Intră în cont</h1>
       <AuthTrustNotice />

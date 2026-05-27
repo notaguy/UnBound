@@ -1,0 +1,29 @@
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo--header {
+  height: 36px;
+  max-width: 140px;
+}
+
+.logo--hero {
+  height: 72px;
+  max-width: 220px;
+  margin-bottom: 0.75rem;
+}
+
+.logo--footer {
+  height: 40px;
+  max-width: 160px;
+  margin: 0 auto 0.75rem;
+}
+
+.logo--auth {
+  height: 48px;
+  max-width: 180px;
+  margin-bottom: 0.75rem;
+}

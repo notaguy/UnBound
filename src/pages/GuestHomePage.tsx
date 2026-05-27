@@ -1,5 +1,6 @@
 import { Link, Navigate } from "react-router-dom";
 import { useApp } from "../context/AppContextSupabase";
+import Logo from "../components/Logo";
 import WeeklyEvents from "../components/WeeklyEvents";
 import RolesOverview from "../components/RolesOverview";
 import PlatformOverview from "../components/PlatformOverview";
@@ -16,6 +17,7 @@ export default function GuestHomePage() {
   return (
     <div className="page">
       <section className="guest-hero" aria-labelledby="guest-hero-title">
+        <Logo className="logo--hero" />
         <p className="guest-hero__badge">MTU Cork · Sport & accesibilitate</p>
         <h1 id="guest-hero-title" className="guest-hero__title">
           Platformă unde nevoile tale devin proiecte reale

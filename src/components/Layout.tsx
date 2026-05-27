@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
+import Logo from "./Logo";
 import { useApp } from "../context/AppContextSupabase";
 import { ROLE_LABELS } from "../lib/roles";
 import "./Header.css";
@@ -56,18 +57,7 @@ export default function Layout() {
       <header className="header">
         <div className="header__inner">
           <Link to="/" className="header__brand" onClick={() => setMenuOpen(false)}>
-            <span className="header__logo" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-                <circle cx="16" cy="16" r="7" stroke="currentColor" strokeWidth="2.5" />
-                <path
-                  d="M16 9v14M9 16h14"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </span>
-            <span className="header__name">INGENIUM</span>
+            <Logo className="logo--header" />
           </Link>
 
           {isAuthenticated && currentUser && (
@@ -156,6 +146,7 @@ export default function Layout() {
 
       <footer className="footer">
         <div className="footer__inner">
+          <Logo className="logo--footer" />
           {isAuthenticated && currentUser && (
             <p className="footer__roles">
               Roluri active:{" "}
