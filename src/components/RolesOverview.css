@@ -1,0 +1,72 @@
+.roles-overview__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.role-card {
+  padding: 1rem 1.1rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.role-card__badge {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+}
+
+.role-card__badge--guest {
+  background: #e8eef0;
+  color: var(--color-text-muted);
+}
+
+.role-card__badge--citizen {
+  background: color-mix(in srgb, var(--color-primary) 15%, white);
+  color: var(--color-primary);
+}
+
+.role-card__badge--student {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.role-card__badge--disability {
+  background: var(--color-accent-soft);
+  color: #c45c26;
+}
+
+.role-card__badge--volunteer {
+  background: color-mix(in srgb, var(--color-teal) 25%, white);
+  color: var(--color-primary);
+}
+
+.role-card__badge--mtu_admin {
+  background: #1a2e35;
+  color: #fff;
+}
+
+.role-card__short {
+  margin: 0 0 0.4rem;
+  font-size: 0.92rem;
+  color: var(--color-text);
+}
+
+.role-card__how {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.role-card__how strong {
+  color: var(--color-primary);
+}

@@ -1,0 +1,49 @@
+.platform-overview {
+  padding: 0;
+}
+
+.platform-flow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.platform-flow li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.platform-flow strong {
+  grid-column: 1;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.platform-flow span {
+  grid-column: 1 / -1;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+@media (min-width: 520px) {
+  .platform-flow li {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .platform-flow span {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+}
