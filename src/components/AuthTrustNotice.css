@@ -1,0 +1,28 @@
+.auth-trust {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #c5dce4;
+  border-radius: var(--radius-sm);
+  background: #eef7fa;
+}
+
+.auth-trust__title {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0f4c5c;
+}
+
+.auth-trust__text {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #3d5560;
+}
+
+.auth-trust__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}

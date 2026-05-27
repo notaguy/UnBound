@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import AuthTrustNotice from "../components/AuthTrustNotice";
 import { useApp } from "../context/AppContextSupabase";
 import "./AuthPages.css";
 
@@ -39,6 +40,7 @@ export default function RegisterPage() {
         După înregistrare devii automat <strong>Citizen</strong> — poți participa la
         evenimente, comunități și poți cere roluri suplimentare.
       </p>
+      <AuthTrustNotice />
 
       <form className="auth-form" onSubmit={handleSubmit}>
         {error && (

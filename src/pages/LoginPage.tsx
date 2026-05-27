@@ -1,7 +1,8 @@
 import { useState, type FormEvent } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import AuthTrustNotice from "../components/AuthTrustNotice";
+import DemoAccountsPanel from "../components/DemoAccountsPanel";
 import { useApp } from "../context/AppContextSupabase";
-import { DEMO_ACCOUNTS } from "../data/seed";
 import "./AuthPages.css";
 
 export default function LoginPage() {
@@ -34,6 +35,7 @@ export default function LoginPage() {
       </Link>
       <p className="section__eyebrow">Autentificare</p>
       <h1 className="section__title">Intră în cont</h1>
+      <AuthTrustNotice />
 
       <form className="auth-form" onSubmit={handleSubmit}>
         {error && (
@@ -68,25 +70,12 @@ export default function LoginPage() {
         </button>
       </form>
 
-      <div className="demo-accounts">
-        <p className="demo-accounts__title">Conturi demo (testare)</p>
-        <ul>
-          {DEMO_ACCOUNTS.map((a) => (
-            <li key={a.email}>
-              <button
-                type="button"
-                className="demo-accounts__btn"
-                onClick={() => {
-                  setEmail(a.email);
-                  setPassword(a.password);
-                }}
-              >
-                {a.label}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <DemoAccountsPanel
+        onSelect={(demoEmail, demoPassword) => {
+          setEmail(demoEmail);
+          setPassword(demoPassword);
+        }}
+      />
 
       <p className="auth-note">
         Nu ai cont? <Link to="/inregistrare">Înregistrează-te</Link>

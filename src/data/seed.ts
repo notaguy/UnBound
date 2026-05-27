@@ -154,9 +154,3 @@ export function createSeedData(): AppData {
     currentUserId: null,
   };
 }
-
-export const DEMO_ACCOUNTS = [
-  { email: "admin@mtucork.ie", password: "admin123", label: "Administrator MTU Cork" },
-  { email: "alex@demo.ie", password: "demo123", label: "Persoană cu dizabilități" },
-  { email: "student@mtucork.ie", password: "student123", label: "Student" },
-] as const;

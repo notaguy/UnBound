@@ -1,0 +1,39 @@
+.demo-accounts {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--surface-muted, #f4f7f8);
+  border-radius: var(--radius-sm);
+}
+
+.demo-accounts__title {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted, #5a6b73);
+}
+
+.demo-accounts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.demo-accounts__btn {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border, #d0dde2);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.demo-accounts__btn:hover {
+  border-color: var(--brand, #0f4c5c);
+}
